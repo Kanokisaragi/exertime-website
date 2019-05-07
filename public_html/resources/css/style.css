@@ -1,0 +1,99 @@
+:root {
+    --primary-theme-colour: #009ae4;
+    --scondary-theme-colour: #FE9330;
+    --background-colour: #1f1f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*      Global      */
+body {
+
+}
+
+.wrapper{
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*      Navigation      */
+nav {
+    padding-top: 10px;
+    clear: left;
+    margin: 0 auto 5px auto;
+    background: var(--primary-theme-colour);
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background: var(--primary-theme-colour);
+    color: var(--scondary-theme-colour);
+}
+
+nav a.current {
+    background: var(--primary-theme-colour);
+    color: var(--scondary-theme-colour);
+}
+
+
+ /* Footer */
+
+footer {
+    padding: 30px;
+    background: #1f1f1f;
+    color: white;
+    position: bottom;
+}
+
+footer img {
+    margin-left: auto;
+    position: relative;
+    vertical-align: middle;
+}
+
+footer p {
+text-align: left;
+
+}
+
+footer ul, li {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer li{
+    display: inline;
+}
