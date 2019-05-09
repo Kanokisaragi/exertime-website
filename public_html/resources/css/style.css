@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper{
-    margin: 20px 200px;
+    margin: 20px 250px;
     height: 100%;
 }
 
@@ -51,18 +51,18 @@ li {
 }
 
 
-/*  Buttons */
-button, input[type="submit"] {
+/**  Buttons **/
+button {
     border: 1px solid var(--grey);  /*#a6a6a6*/
     border-radius: 5px;
     background: var(--lighter_grey);    /*#e3e3e3*/
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover {
     background: var(--light_grey);  /*#c8c8c8*/
 }
 
-button:active, input[type="submit"]:active {
+button:active {
     background: var(--scondary-theme-colour);
 }
 
@@ -84,7 +84,7 @@ button:active, input[type="submit"]:active {
 
 
 
-/*  Tables  */
+/**  Tables  **/
 div.table_scroll {
     max-height: 400px;
     overflow-y: auto;
@@ -115,6 +115,38 @@ th {
     text-align: left;
     background-color: var(--light_grey);
     color: black;
+}
+
+
+/** forms   **/
+form {
+
+}
+
+form td, form th, form tr {
+    border: none;
+    background-color: white;
+}
+
+input, select {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    border: 1px solid var(--grey);  /*#a6a6a6*/
+    border-radius: 5px;
+    background: var(--lighter_grey);    /*#e3e3e3*/
+}
+
+input[type="submit"]:hover {
+    background: var(--light_grey);  /*#c8c8c8*/
+}
+
+input[type="submit"]:active {
+    background: var(--scondary-theme-colour);
 }
 
 
@@ -152,7 +184,7 @@ nav a.current {
     color: var(--scondary-theme-colour);
 }
 
-/***        Other Bits      */
+/***        Body      ***/
 .page-title {
     margin: 10px 0;
     border-bottom: 1px solid var(--grey);
@@ -172,12 +204,15 @@ nav a.current {
 /***       Footer      ***/
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    padding: 30px;
     background: var(--footer-colour);
     width: 100%;
     color: white;
+}
+
+footer .footer-content {
+    margin: 30px;
 }
 
 footer img {

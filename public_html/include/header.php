@@ -1,6 +1,5 @@
 <header>
     <nav>
-
         <ul>
             <li><img src="./resources/img/head_logo.PNG" alt="Logo"></li>
             <li><a href="home.php" class="current">Home</a></li>
