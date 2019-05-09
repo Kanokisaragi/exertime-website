@@ -33,12 +33,10 @@
                     <td>True</td>
                     <td>
                         <button type="button" name="btn-edit">
-                            <img src="./resources/img/icons/edit.svg" alt="edit" width="10px" height="10px">
-                            Edit
+                            <a class="btn-icon btn-edit">Edit</a>
                         </button>
                         <button type="button" name="btn-del">
-                            <img src="./resources/img/icons/delete.svg" alt="edit" width="10px" height="10px">
-                            Delete
+                            <a class="btn-icon btn-del">Delete</a>
                         </button>
                     </td>
                 </tr>

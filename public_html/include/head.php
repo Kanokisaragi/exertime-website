@@ -3,5 +3,5 @@
 
 <link rel="icon" type="image/png" href="/resources/images/favicon.ico" />
 
-<link rel="stylesheet" href="resources/css/reset.css">
-<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" media="screen" href="resources/css/reset.css">
+<link rel="stylesheet" media="screen" href="resources/css/style.css">

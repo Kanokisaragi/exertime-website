@@ -11,8 +11,18 @@
         <?php include("include/header.php"); ?>
 
         <div class="wrapper">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula sapien nec augue dignissim facilisis. Mauris vitae gravida nibh, a consectetur velit. Quisque magna arcu, fringilla id semper id, sollicitudin ut sem. Mauris elementum turpis ex, vitae feugiat sem scelerisque sit amet. Sed eleifend lectus non velit volutpat, vel consectetur nulla suscipit. Maecenas non erat nulla. Quisque et orci augue. Morbi egestas quam velit, ut molestie ante pulvinar in. Nullam fringilla lacus a nisl pulvinar, in accumsan orci accumsan. Donec interdum velit quis velit ultricies, id pulvinar augue molestie.</p>
+            <h2>Exertime Administration Portal</h2>
+            <h3>From this portal you can configure various functions of the Exertime clients such as:</h3>
+            <ul>
+                <li>Create new or edit existing organisations</li>
+                <li>Create new or edit existing departments</li>
+                <li>Edit calorie goals and Exertime runtime variables per department</li>
+                <li>View user activity</li>
+                <li>Update Exertime user weights</li>
+                <li>Manage which exercises department have access too or disable exercises for all departments.</li>
+                <li>Adjust coefficients per exercises</li>
+                <li>Run Exertime reports</li>
+            </ul>
         </div>
         <?php include("include/footer.php"); ?>
     </body>

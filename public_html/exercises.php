@@ -21,55 +21,54 @@
                 <tr>
                     <td>exercise</td>
                     <td>category</td>
-                    <td>img.jpg</td>
+                    <td>
+                        <img class"img-exercise" src="https://via.placeholder.com/140x94.png" alt="">
+                    </td>
                     <td>active</td>
                     <td>100</td>
                     <td>min</td>
                     <td>
-                        <button type="button" name="btn-edit" class="btn-cmd">
-                            <img src="./resources/img/icons/edit.svg" alt="edit">
-                            Edit
+                        <button type="button" name="btn-edit">
+                            <a class="btn-icon btn-edit">Edit</a>
                         </button>
-                        <button type="button" name="btn-del" class="btn-cmd">
-                            <img src="./resources/img/icons/delete.svg" alt="edit">
-                            Delete
+                        <button type="button" name="btn-del">
+                            <a class="btn-icon btn-del">Delete</a>
                         </button>
                     </td>
                 </tr>
                 <tr>
                     <td>exercise</td>
                     <td>category</td>
-                    <td>img.jpg</td>
+                    <td>
+                        <img src="https://via.placeholder.com/140x94.png" alt="">
+                    </td>
                     <td>active</td>
                     <td>100</td>
                     <td>min</td>
                     <td>
-                        <button type="button" name="btn-edit" class="btn-cmd">
-                            <img src="./resources/img/icons/edit.svg" alt="edit">
-                            Edit
+                        <button type="button" name="btn-edit">
+                            <a class="btn-icon btn-edit">Edit</a>
                         </button>
-                        <button type="button" name="btn-del" class="btn-cmd">
-                            <img src="./resources/img/icons/delete.svg" alt="edit">
-                            Delete
+                        <button type="button" name="btn-del">
+                            <a class="btn-icon btn-del">Delete</a>
                         </button>
                     </td>
                 </tr>
                 <tr>
                     <td>exercise</td>
                     <td>category</td>
-                    <td>img.jpg</td>
+                    <td>
+                        <img src="https://via.placeholder.com/140x94.png" alt="">
+                    </td>
                     <td>active</td>
                     <td>100</td>
                     <td>min</td>
                     <td>
-                        <button type="button" name="btn-edit" class="btn-cmd">
-
-                            <img src="./resources/img/icons/edit.svg" alt="edit">
-                            Edit
+                        <button type="button" name="btn-edit">
+                            <a class="btn-icon btn-edit">Edit</a>
                         </button>
-                        <button type="button" name="btn-del" class="btn-cmd">
-                            <img src="./resources/img/icons/delete.svg" alt="edit">
-                            Delete
+                        <button type="button" name="btn-del">
+                            <a class="btn-icon btn-del">Delete</a>
                         </button>
                     </td>
                 </tr>
