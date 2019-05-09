@@ -1,16 +1,16 @@
 :root {
     --primary-theme-colour: #009ae4;
     --scondary-theme-colour: #FE9330;
-    --background-colour: #1f1f1f;
+    --footer-colour: #1f1f1f;
+
+    --table-colour-light_grey:  #f2f2f2;
+    --table-colour-header: #C5C5C5;
+    --table-colour-hover: #dfdfdf;
+    --table-colour-text: #1f1f1f;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
-
-/*      Global      */
+/***      Global      ***/
 body {
 
 }
@@ -33,12 +33,60 @@ p, a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*  Buttons */
+button {
 
-/*      Navigation      */
+}
+
+button.btn-cmd {
+    color: var(--primary-theme-colour);
+}
+
+button.btn-cmd img {
+    width: 10px;
+    height: 10px;
+}
+
+
+
+/*  Tables  */
+div.table_scroll {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+table {
+    margin: 5px auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid var(--table-colour-hover);
+    padding: 8px;
+}
+
+tr:nth-child(odd){
+    background-color: var(--table-colour-light_grey);
+}
+
+tr:hover {
+    background-color: var(--table-colour-hover);
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--table-colour-header);
+    color: black;
+}
+
+
+/***      Navigation      ***/
 nav {
     padding-top: 10px;
     clear: left;
-    margin: 0 auto 5px auto;
+    margin: 0 auto 10px auto;
     background: var(--primary-theme-colour);
     width: 100%;
     text-align: center;
@@ -69,11 +117,11 @@ nav a.current {
 }
 
 
- /* Footer */
+/***       Footer      ***/
 
 footer {
     padding: 30px;
-    background: #1f1f1f;
+    background: var(--footer-colour);
     color: white;
     position: bottom;
 }
@@ -85,8 +133,7 @@ footer img {
 }
 
 footer p {
-text-align: left;
-
+    text-align: left;
 }
 
 footer ul, li {
