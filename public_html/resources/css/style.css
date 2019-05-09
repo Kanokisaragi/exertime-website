@@ -172,10 +172,12 @@ nav a.current {
 /***       Footer      ***/
 
 footer {
+    position: fixed;
+    bottom: 0;
     padding: 30px;
     background: var(--footer-colour);
+    width: 100%;
     color: white;
-    position: bottom;
 }
 
 footer img {
