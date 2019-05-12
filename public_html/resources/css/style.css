@@ -2,16 +2,13 @@
     --primary-theme-colour: #009ae4;
     --scondary-theme-colour: #FE9330;
     --footer-colour: var(--black);
-
     --text-body: #6f6f6f;
-
-    --pale_white:  #f2f2f2;
+    --pale_white: #f2f2f2;
     --lighter_grey: #dfdfdf;
     --light_grey: #c5c5c5;
     --grey: #9f9d9d;
     --black: #1f1f1f;
 }
-
 
 /***      Global      ***/
 html, body {
@@ -37,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 h1, h2, h3 {
     padding: 4px;
-    font-style: "Segoe UI Light","Segoe UI","Century Gothic", Arial, "Times New Roman";
+    font-style: "Segoe UI Light", "Segoe UI", "Century Gothic", Arial, "Times New Roman";
     color: var(--primary-theme-colour);
 }
 
@@ -54,10 +51,7 @@ ul {
     padding-left: 25px;
 }
 
-li {
-
-}
-
+li {}
 
 /**  Buttons **/
 button {
@@ -78,19 +72,17 @@ button:active {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 10px;
-    padding-left:15px;
+    padding-left: 15px;
     color: var(--primary-theme-colour);
 }
 
-.btn-edit {
+.btn-icon-edit {
     background-image: url('../img/icons/edit.svg');
 }
 
-.btn-del {
+.btn-icon-del {
     background-image: url('../img/icons/delete.svg');
 }
-
-
 
 /**  Tables  **/
 div.table_scroll {
@@ -107,7 +99,7 @@ td, th {
     vertical-align: middle;
 }
 
-tr:nth-child(odd){
+tr:nth-child(odd) {
     background-color: var(--pale_white);
 }
 
@@ -121,11 +113,8 @@ th {
     color: black;
 }
 
-
 /** forms   **/
-form {
-
-}
+form {}
 
 form td, form th, form tr {
     border: none;
@@ -133,6 +122,7 @@ form td, form th, form tr {
 }
 
 input, select {
+    margin: 4px;
     border: 1px solid var(--grey);
     border-radius: 5px;
     height: 20px;
@@ -142,7 +132,9 @@ input, select {
 input[type="submit"] {
     border: 1px solid var(--grey);
     border-radius: 5px;
+    width: auto;
     background: var(--lighter_grey);
+    float: right;
 }
 
 input[type="submit"]:hover {
@@ -166,15 +158,13 @@ input[type="submit"]:active {
 .modal-content {
     margin: 15% auto;
     padding: 20px;
-    width: 500px;
-    height: 300px;
+    max-width: 400px;
     background-color: white;
 }
 
 .close {
     float: right;
 }
-
 
 /***      Navigation      ***/
 nav {
@@ -227,9 +217,7 @@ nav a.current {
     color: var(--text-body);
 }
 
-
 /***       Footer      ***/
-
 footer {
     position: absolute;
     bottom: 0;
@@ -258,6 +246,6 @@ footer ul, footer li {
     text-decoration: none;
 }
 
-footer li{
+footer li {
     display: inline;
 }

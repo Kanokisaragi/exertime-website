@@ -36,11 +36,11 @@
                                     <td>100</td>
                                     <td>min</td>
                                     <td>
-                                        <button type='button' name='btn-edit'>
-                                            <a class='btn-icon btn-edit'>Edit</a>
+                                        <button class='btn-edit' type='button' name='btn-edit'>
+                                            <a class='btn-icon btn-icon-edit'>Edit</a>
                                         </button>
-                                        <button type='button' name='btn-del'>
-                                            <a class='btn-icon btn-del'>Delete</a>
+                                        <button class='btn-del' type='button' name='btn-del'>
+                                            <a class='btn-icon btn-icon-del'>Delete</a>
                                         </button>
                                     </td>
                                 </tr>";
@@ -62,10 +62,60 @@
             </div>
             <?php include("include/footer.php"); ?>
         </div>
-        <div class="modal-bg">
+        <div id="modal" class="modal-bg">
             <div class="modal-content">
-                <button class="close" type="button" name="">X</button>
+                <button id="btn-close" class="close" type="button" name="">X</button>
                 <h2>Edit</h2>
+                <form method="post">
+                        <table class="form">
+                            <tr>
+                                <td>Caption</td>
+                                <td>
+                                    <input type="text"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>
+                                    <select>
+                                        <option value="Easy">Easy</option>
+                                        <option value="Moderate">Moderate</option>
+                                        <option value="Challenging">Challenging</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>
+                                    <select>
+                                        <option value="active">Active</option>
+                                        <option value="inactive">Inactive</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kilojoule Coefficient</td>
+                                <td>
+                                    <input type="number" step="0.000001" name="" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Calculation Type</td>
+                                <td>
+                                    <select>
+                                        <option value="rep">Repetition</option>
+                                        <option value="dur">Duration</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="Submit" value="Update"/>
+                                </td>
+                            </tr>
+                        </table>
+                </form>
             </div>
         </div>
     </body>

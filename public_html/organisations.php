@@ -30,11 +30,11 @@
                                         <td>countdown</td>
                                         <td>walking</td>
                                         <td>
-                                            <button type='button' name='btn-edit'>
-                                                <a class='btn-icon btn-edit'>Edit</a>
+                                            <button class='btn-edit' type='button' name='btn-edit'>
+                                                <a class='btn-icon btn-icon-edit'>Edit</a>
                                             </button>
-                                            <button type='button' name='btn-del'>
-                                                <a class='btn-icon btn-del'>Delete</a>
+                                            <button class='btn-del' type='button' name='btn-del'>
+                                                <a class='btn-icon btn-icon-del'>Delete</a>
                                             </button>
                                         </td>
                                     </tr>";
@@ -53,6 +53,12 @@
                 </div>
             </div>
             <?php include("include/footer.php"); ?>
+        </div>
+        <div id="modal" class="modal-bg">
+            <div class="modal-content">
+                <button id="btn-close" class="close" type="button" name="">X</button>
+                <h2>Edit</h2>
+            </div>
         </div>
     </body>
 </html>
