@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php include("include/head.php"); ?>
-        <title>global</title>
+        <?php
+            $title = "Global";
+            include("include/head.php");
+        ?>
+        <title>Exertime | Global</title>
     </head>
     <body>
 

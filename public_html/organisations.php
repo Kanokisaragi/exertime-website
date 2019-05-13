@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php include("include/head.php"); ?>
-        <title>Organisations</title>
+        <?php
+            $title = "Organisations";
+            include("include/head.php");
+        ?>
+        <title>Exertime | Organisations</title>
     </head>
     <body>
         <div class="wrapper">

@@ -2,10 +2,10 @@
 <html>
     <head>
         <?php
-            $title = "Homepage";
+            $title = "Home";
             include("include/head.php");
         ?>
-        <title>Home</title>
+        <title>Exertime | Home</title>
     </head>
     <body>
         <div class="wrapper">
