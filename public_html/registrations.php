@@ -5,7 +5,6 @@
             $title = "Registrations";
             include("include/head.php");
         ?>
-        <title>Exertime | Registrations</title>
     </head>
     <body>
         <div class="wrapper">
@@ -14,6 +13,7 @@
                 <div class="page-title">
                     <h2>Registrations</h2>
                 </div>
+                <button class='' type='button' name='btn-newRegistration'>New Registration</button>
                 <div class="table_scroll">
                     <table id="datatable" class="display compact hover">
                         <thead>
@@ -64,6 +64,42 @@
             <div class="modal-content">
                 <button id="btn-close" class="close" type="button" name="">X</button>
                 <h2>Edit</h2>
+                <form method="post">
+                        <table class="form">
+                            <tr>
+                                <td>Short Name</td>
+                                <td>
+                                    <input type="text" name="" value="4a009b01-46ed-433a-90e9-f1c0eaf12bcb" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Department</td>
+                                <td>
+                                    <select>
+                                        <option value="None">None</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Remaining</td>
+                                <td>
+                                    <input type="number" step="0.01" name="" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Used</td>
+                                <td>
+                                    <input type="number" name="" value="0" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>
+                                    <input type="number" name="" value="0" disabled>
+                                </td>
+                            </tr>
+                        </table>
+                </form>
             </div>
         </div>
     </body>

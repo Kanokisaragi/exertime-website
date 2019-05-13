@@ -5,7 +5,6 @@
             $title = "Exercises";
             include("include/head.php");
         ?>
-        <title>Exertime | Exercises</title>
     </head>
     <body>
         <div class="wrapper">
@@ -14,6 +13,7 @@
                 <div class="page-title">
                     <h2>Exercises</h2>
                 </div>
+                <button class='' type='button' name='btn-newExercise'>New Exercise</button>
                 <div class="table_scroll">
                     <table id="datatable" class="display compact hover">
                         <thead>

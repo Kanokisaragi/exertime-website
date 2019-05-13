@@ -1,4 +1,7 @@
 <header>
+    <title>
+        <?php echo("Exertime | $title");?>
+    </title>
     <nav>
         <ul>
             <li><img src="./resources/img/head_logo.PNG" alt="Logo"></li>

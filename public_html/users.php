@@ -5,7 +5,6 @@
             $title = "Users";
             include("include/head.php");
         ?>
-        <title>Exertime | Users</title>
     </head>
     <body>
         <div class="wrapper">

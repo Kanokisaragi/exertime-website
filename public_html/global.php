@@ -5,7 +5,6 @@
             $title = "Global";
             include("include/head.php");
         ?>
-        <title>Exertime | Global</title>
     </head>
     <body>
 
@@ -48,6 +47,7 @@
                 <div class="page-title">
                     <h2>Helpful Hints</h2>
                 </div>
+                <button class='' type='button' name='btn-newHint'>New Hint</button>
                 <div class="table_scroll">
                     <table id="datatable" class="display compact hover">
                         <thead>
