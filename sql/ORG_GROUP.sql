@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 13, 2019 at 01:34 PM
+-- Generation Time: May 13, 2019 at 01:56 PM
 -- Server version: 5.5.60-MariaDB
 -- PHP Version: 7.2.10
 
@@ -39,6 +39,13 @@ CREATE TABLE IF NOT EXISTS `ORG_GROUP` (
   `Notification Dialog Prompt` text CHARACTER SET latin1 COLLATE latin1_general_cs NOT NULL COMMENT 'Case-Sensitive',
   `Emergency Exit` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ORG_GROUP`
+--
+
+INSERT INTO `ORG_GROUP` (`Organisation`, `Group_Name`, `Group_Short_Name`, `Run Exertime Every`, `Must Be Completed Every`, `Default Postpone Interval`, `Walking Exercise`, `Walking Ex Delay`, `Walking Exercise Prompt`, `Notification Dialog Prompt`, `Emergency Exit`) VALUES
+('UTAS', 'Exertime Project', 'EPro', 120, 180, 15, 'Walk', 120, 'You''ve been away. Record your walk?', 'Please Run Exertime.', 1);
 
 --
 -- Indexes for dumped tables

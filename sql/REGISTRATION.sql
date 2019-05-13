@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 13, 2019 at 01:33 PM
+-- Generation Time: May 13, 2019 at 01:55 PM
 -- Server version: 5.5.60-MariaDB
 -- PHP Version: 7.2.10
 
@@ -33,6 +33,13 @@ CREATE TABLE IF NOT EXISTS `REGISTRATION` (
   `Used` int(11) NOT NULL,
   `Total` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `REGISTRATION`
+--
+
+INSERT INTO `REGISTRATION` (`Registration_Key`, `Department`, `Remaining`, `Used`, `Total`) VALUES
+('N9TT-9G0A-B7FQ-RANC', 'UTAS', 7, 1, 6);
 
 --
 -- Indexes for dumped tables

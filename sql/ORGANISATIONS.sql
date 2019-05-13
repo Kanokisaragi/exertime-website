@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 13, 2019 at 01:34 PM
+-- Generation Time: May 13, 2019 at 01:56 PM
 -- Server version: 5.5.60-MariaDB
 -- PHP Version: 7.2.10
 
@@ -32,6 +32,13 @@ CREATE TABLE IF NOT EXISTS `ORGANISATIONS` (
   `Countdown Duration` int(32) NOT NULL,
   `Walking Ex Delay` int(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ORGANISATIONS`
+--
+
+INSERT INTO `ORGANISATIONS` (`Short name`, `Name`, `Countdown Duration`, `Walking Ex Delay`) VALUES
+('UTAS', 'University Of Tasmania', 120, 600);
 
 --
 -- Indexes for dumped tables
