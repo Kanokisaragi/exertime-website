@@ -13,8 +13,10 @@
                 <div class="page-title">
                     <h2>Organisations</h2>
                 </div>
-                <button class='' type='button' name='btn-newOrg'>New Organisation</button>
-                <div class="table_scroll">
+                <button class='btn-add' type='button' name='btn-add'>
+                    <a class='btn-icon btn-icon-add'>New Organisation</a>
+                </button>
+                <div class="table_wrapper">
                     <table id="datatable" class="display compact hover">
                         <thead>
                             <tr>

@@ -76,6 +76,10 @@ button:active {
     color: var(--primary-theme-colour);
 }
 
+.btn-icon-add {
+    background-image: url('../img/icons/add.svg');
+}
+
 .btn-icon-edit {
     background-image: url('../img/icons/edit.svg');
 }
@@ -85,26 +89,18 @@ button:active {
 }
 
 /**  Tables  **/
-div.table_scroll {
-    /* overflow-y: auto; */
+.table_wrapper {
+    margin: 2px;
+    padding: 10px;
 }
 
 table {
-    margin: 5px auto;
-    border-collapse: collapse;
+    margin: auto;
 }
 
 td, th {
     border: 1px solid var(--grey);
     vertical-align: middle;
-}
-
-tr:nth-child(odd) {
-    background-color: var(--pale_white);
-}
-
-tr:hover {
-    background-color: var(--lighter_grey);
 }
 
 th {
@@ -114,19 +110,26 @@ th {
 }
 
 /** forms   **/
-form {}
+form {
+
+}
 
 form td, form th, form tr {
     border: none;
     background-color: white;
 }
 
-input, select {
+input, select, textarea {
     margin: 4px;
     border: 1px solid var(--grey);
     border-radius: 5px;
     height: 20px;
     width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    height: 40px;
 }
 
 input[type="submit"] {
@@ -145,6 +148,11 @@ input[type="submit"]:active {
     background: var(--scondary-theme-colour);
 }
 
+.img-exercise {
+    width: 140px;
+    height: 94;
+}
+
 /** modal   **/
 .modal-bg {
     display: none;
@@ -156,7 +164,7 @@ input[type="submit"]:active {
 }
 
 .modal-content {
-    margin: 15% auto;
+    margin: 50px auto;
     padding: 20px;
     max-width: 400px;
     background-color: white;

@@ -33,8 +33,6 @@
                                 <td>Auto Prompt Exercise</td>
                                 <td><select>
                                         <option value="1">Take a hike</option>
-                                        <option value="2">Take a hike</option>
-                                        <option value="3">Take a hike</option>
                                     </select>
                                 </td>
                             </tr>
@@ -47,8 +45,10 @@
                 <div class="page-title">
                     <h2>Helpful Hints</h2>
                 </div>
-                <button class='' type='button' name='btn-newHint'>New Hint</button>
-                <div class="table_scroll">
+                <button class='btn-add' type='button' name='btn-add'>
+                    <a class='btn-icon btn-icon-add'>New Hint</a>
+                </button>
+                <div class="table_wrapper">
                     <table id="datatable" class="display compact hover">
                         <thead>
                             <tr>
@@ -92,6 +92,36 @@
             <div class="modal-content">
                 <button id="btn-close" class="close" type="button" name="">X</button>
                 <h2>Edit</h2>
+                <form method="post">
+                        <table class="form">
+                            <tr>
+                                <td>Department</td>
+                                <td>
+                                    <select>
+                                        <option value="None">None</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hint</td>
+                                <td>
+                                    <input type="text" name="" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hint Order</td>
+                                <td>
+                                    <input type="number" step="1" name="" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="Submit" value="Update"/>
+                                </td>
+                            </tr>
+                        </table>
+                </form>
             </div>
         </div>
     </body>

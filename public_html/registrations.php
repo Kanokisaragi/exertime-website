@@ -13,8 +13,10 @@
                 <div class="page-title">
                     <h2>Registrations</h2>
                 </div>
-                <button class='' type='button' name='btn-newRegistration'>New Registration</button>
-                <div class="table_scroll">
+                <button class='btn-add' type='button' name='btn-add'>
+                    <a class='btn-icon btn-icon-add'>New Registration</a>
+                </button>
+                <div class="table_wrapper">
                     <table id="datatable" class="display compact hover">
                         <thead>
                             <tr>
@@ -96,6 +98,12 @@
                                 <td>Total</td>
                                 <td>
                                     <input type="number" name="" value="0" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="Submit" value="Update"/>
                                 </td>
                             </tr>
                         </table>

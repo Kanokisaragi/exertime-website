@@ -13,8 +13,10 @@
                 <div class="page-title">
                     <h2>Exercises</h2>
                 </div>
-                <button class='' type='button' name='btn-newExercise'>New Exercise</button>
-                <div class="table_scroll">
+                <button class='btn-add' type='button' name='btn-add'>
+                    <a class='btn-icon btn-icon-add'>New Exercise</a>
+                </button>
+                <div class="table_wrapper">
                     <table id="datatable" class="display compact hover">
                         <thead>
                             <tr>

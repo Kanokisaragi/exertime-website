@@ -7,7 +7,7 @@
 <link rel="stylesheet" media="screen" href="resources/css/style.css">
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="resources/js/modal.js"></script>
+<script type="text/javascript" src="resources/js/modal_edit.js"></script>
 
 
 <!-- datatable plugin (https://datatables.net/examples/data_sources/server_side) -->

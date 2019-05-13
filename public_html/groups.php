@@ -13,8 +13,10 @@
                 <div class="page-title">
                     <h2>Groups</h2>
                 </div>
-                <button class='' type='button' name='btn-newGroup'>New Group</button>
-                <div class="table_scroll">
+                <button class='btn-add' type='button' name='btn-add'>
+                    <a class='btn-icon btn-icon-add'>New Group</a>
+                </button>
+                <div class="table_wrapper">
                     <table id="datatable" class="display compact hover">
                         <thead>
                             <tr>
@@ -76,6 +78,86 @@
             <div class="modal-content">
                 <button id="btn-close" class="close" type="button" name="">X</button>
                 <h2>Edit</h2>
+                <form method="post">
+                        <table class="form">
+                            <tr>
+                                <td>Organisation</td>
+                                <td>
+                                    <select>
+                                        <option value="" disabled selected>Select an Organisation</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Group Name</td>
+                                <td>
+                                    <input type="text"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Group Short Name</td>
+                                <td>
+                                    <input type="text"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Run Exertime every</td>
+                                <td>
+                                    <input type="number" step="1" name="" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Completed by user every</td>
+                                <td>
+                                    <input type="number" step="1" name="" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Default postpone interval</td>
+                                <td>
+                                    <input type="number" step="1" name="" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Walking Exercise</td>
+                                <td>
+                                    <select>
+                                        <option value="">None</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Walking Exercise Delay</td>
+                                <td>
+                                    <input type="number" step="1" name="" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Walking Exercise Prompt</td>
+                                <td>
+                                    <textarea name="name"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Notification Dialog Prompt</td>
+                                <td>
+                                    <textarea name="name"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Emergency exit</td>
+                                <td>
+                                    <input type="checkbox" name="" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="Submit" value="Update"/>
+                                </td>
+                            </tr>
+                        </table>
+                </form>
             </div>
         </div>
     </body>
