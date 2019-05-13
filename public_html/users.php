@@ -4,7 +4,12 @@
         <?php
             $title = "Users";
             include("include/head.php");
+            include("include/db_conn.php");
+        
+            $query = "SELECT * FROM USERS";
+            $result = $mysqli->query($query);
         ?>
+        <title>Exertime | Users</title>
     </head>
     <body>
         <div class="wrapper">
@@ -31,18 +36,47 @@
                             </tr>
                         </thead>
                         <?php
-                            for ($i=0; $i < 3; $i++) {
+                            while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+                                if($row['emergency exit'] == 1)
+                                {
+                                    $row['emergency exit'] = "True";
+                                }
+                                else
+                                {
+                                    $row['emergency exit'] = "False";
+                                }
+                                
+                                if($row['status'] == 1)
+                                {
+                                    $row['status'] = "Active";
+                                }
+                                else
+                                {
+                                    $row['status'] = "Inactive";
+                                }   
+                                
+                                if($row['new user'] == 1)
+                                {
+                                    $row['new user'] = "True";
+                                }
+                                else
+                                {
+                                    $row['new user'] = "False";
+                                }                                
+
+
+                                
                                 echo "<tr>
-                                        <td>group</td>
-                                        <td>pref name</td>
-                                        <td>given name</td>
-                                        <td>surname</td>
-                                        <td>username</td>
-                                        <td>email@email.com</td>
-                                        <td>false</td>
-                                        <td>active</td>
-                                        <td>0</td>
-                                        <td>true</td>
+                                        <td>" . $row['org_group'] . "</td>
+                                        <td>" . $row['preferred name'] . "</td>
+                                        <td>" . $row['given name'] . "</td>
+                                        <td>" . $row['surname'] . "</td>
+                                        <td>" . $row['username'] . "</td>
+                                        <td>" . $row['email'] . "</td>
+                                        <td>" . $row['emergency exit'] . "</td>
+                                        <td>" . $row['status'] . "</td>
+                                        <td>" . $row['calorie goal'] . "</td>
+                                        <td>" . $row['new user'] . "</td>
                                         <td>
                                             <button class='btn-edit' type='button' name='btn-edit'>
                                                 <a class='btn-icon btn-icon-edit'>Edit</a>
