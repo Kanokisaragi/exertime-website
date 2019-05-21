@@ -1,0 +1,260 @@
+:root {
+    --primary-theme-colour: #009ae4;
+    --scondary-theme-colour: #FE9330;
+    --footer-colour: var(--black);
+    --text-body: #6f6f6f;
+    --pale_white: #f2f2f2;
+    --lighter_grey: #dfdfdf;
+    --light_grey: #c5c5c5;
+    --grey: #9f9d9d;
+    --black: #1f1f1f;
+}
+
+/***      Global      ***/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.main-content {
+    margin: 20px 10%;
+    margin-bottom: 0;
+    padding-bottom: 130px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    padding: 4px;
+    font-style: "Segoe UI Light", "Segoe UI", "Century Gothic", Arial, "Times New Roman";
+    color: var(--primary-theme-colour);
+}
+
+p {
+    color: var(--lighter_grey);
+}
+
+a {
+    color: var(--primary-theme-colour);
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+li {}
+
+/**  Buttons **/
+button {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    background: var(--lighter_grey);
+}
+
+button:hover {
+    background: var(--light_grey);
+}
+
+button:active {
+    background: var(--scondary-theme-colour);
+}
+
+.btn-icon {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 10px;
+    padding-left: 15px;
+    color: var(--primary-theme-colour);
+}
+
+.btn-icon-add {
+    background-image: url('../img/icons/add.svg');
+}
+
+.btn-icon-edit {
+    background-image: url('../img/icons/edit.svg');
+}
+
+.btn-icon-del {
+    background-image: url('../img/icons/delete.svg');
+}
+
+
+/**  Tables  **/
+.table_wrapper {
+    margin: 2px;
+    padding: 10px;
+}
+
+table {
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid var(--grey);
+    vertical-align: middle;
+}
+
+th {
+    text-align: left;
+    background-color: var(--light_grey);
+    color: black;
+}
+
+/** forms   **/
+form {
+
+}
+
+form td, form th, form tr {
+    border: none;
+    background-color: white;
+}
+
+input, select, textarea {
+    margin: 4px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    height: 40px;
+}
+
+input[type="submit"] {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    width: auto;
+    background: var(--lighter_grey);
+    float: right;
+}
+
+input[type="submit"]:hover {
+    background: var(--light_grey);
+}
+
+input[type="submit"]:active {
+    background: var(--scondary-theme-colour);
+}
+
+.img-exercise {
+    width: 140px;
+    height: 94;
+}
+
+/** modal   **/
+.modal-bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: white;
+}
+
+.close {
+    float: right;
+}
+
+/***      Navigation      ***/
+nav {
+    padding-top: 10px;
+    clear: left;
+    margin: 0 auto 10px auto;
+    background: var(--primary-theme-colour);
+    min-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background: var(--primary-theme-colour);
+    color: var(--scondary-theme-colour);
+}
+
+nav a.current {
+    background: var(--primary-theme-colour);
+    color: var(--scondary-theme-colour);
+}
+
+/***        Body      ***/
+.page-title {
+    margin: 10px 0;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 5px;
+}
+
+.page-title h2 {
+    font-size: 24px;
+}
+
+.page-content {
+    padding: 10px;
+    color: var(--text-body);
+}
+
+/***       Footer      ***/
+footer {
+    position: absolute;
+    bottom: 0;
+    background: var(--footer-colour);
+    width: 100%;
+    height: 130px;
+    color: white;
+}
+
+footer .footer-content {
+    margin: 30px;
+}
+
+footer img {
+    margin-left: auto;
+    position: relative;
+    vertical-align: middle;
+}
+
+footer p {
+    text-align: left;
+}
+
+footer ul, footer li {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer li {
+    display: inline;
+}
